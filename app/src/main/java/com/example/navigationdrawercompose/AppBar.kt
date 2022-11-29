@@ -1,22 +1,13 @@
 package com.example.navigationdrawercompose
 
-import androidx.compose.foundation.background
+import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.ListItemDefaults.contentColor
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.material.*
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarColors
-import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.material3.contentColorFor
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion.DarkGray
 import androidx.compose.ui.res.stringResource
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -28,13 +19,15 @@ fun AppBar(
         title = {
             Text(text = stringResource(id = R.string.app_name))
         },
-        modifier = Modifier.background(Color.Blue),
-        colors = TopAppBarDefaults.smallTopAppBarColors(),
+        backgroundColor = MaterialTheme.colors.primary,
+        contentColor = MaterialTheme.colors.onPrimary,
         navigationIcon = {
             IconButton(onClick = onNavigationIconClick) {
-                Icon(imageVector = Icons.Default.Menu, "Toggle Drawer")
+                Icon(
+                    imageVector = Icons.Default.Menu,
+                    contentDescription = "Toggle drawer"
+                )
             }
         }
-
     )
 }
