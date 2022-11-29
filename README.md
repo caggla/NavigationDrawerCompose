@@ -30,6 +30,4 @@ Contents
 
 
 
-
-
-![image](https://user-images.githubusercontent.com/105305189/204504496-dc5a651e-0abc-4b65-a5da-8e3824dda5c6.png)
+![image](https://user-images.githubusercontent.com/105305189/204505222-eec16ace-e59e-4840-8d6a-87c8268075a4.png)
